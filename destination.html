@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <h1>Namma Kudla</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blogs</a>
+    <a href="destination.html">Destinations</a>
+    <a href="guides.html">Guides</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h2>Popular Destinations</h2>
+  <div id="destination-list" class="grid"></div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeBtn" class="close">&times;</span>
+    <img id="modalImage">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  displayData(destinations, "destination-list");
+</script>
+
+</body>
+</html>
